@@ -1,0 +1,7 @@
+[CleanupInfo]
+autoexec.bat=autoexec.bat
+config.sys=config.sys
+Program Files\=Program Files\
+ProgramData\=ProgramData\
+Users\=Users\
+Windows\=Windows\

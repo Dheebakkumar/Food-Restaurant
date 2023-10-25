@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Food Restaurant</title>
+  <style>
+     .d1
+     {
+        font-family: bold;
+        color:red;
+    }
+    .d1:hover{
+      color:rgb(10, 251, 143);
+    }
+    .d2{
+
+        margin-left: 300px;
+      }
+      .btn1{
+        width:180px;
+        height: 55px;
+        color: white;
+        background-color: red;
+        margin-left: 55px;
+      }
+      .btn1:hover{
+        background-color: black;
+        color: red;
+        border:3px solid red;
+      }
+      .btn11{
+        width:130px;
+        height: 40px;
+        color: white;
+        background-color: red;
+      }
+      .btn11:hover{
+        background-color: rgb(213, 245, 7);
+        color: red;
+        box-shadow: 0px 0px 75px yellow;
+      }
+      .btn111{
+        width:130px;
+        height: 40px;
+        background-color: red;
+        color: rgb(233, 229, 229);
+      }
+      .btn111:hover{
+        background-color: rgb(8, 238, 226);
+        box-shadow: 0px 0px 75px rgb(31, 203, 246);
+      }
+      .btnc{
+        width:140px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.503);
+        margin-left: 100px;
+      }
+      .back{
+        background-color: rgba(182, 179, 179, 0.503);
+      }
+      #siz{
+        margin-left: 70px;
+      }
+      #style{
+        margin-top: 100px;
+        font-family:cursive;
+      }
+      #siz1{
+        height: 400px;
+        width: 400px;
+      }
+      #siz1:hover{
+        transform: rotate(5000deg);
+        transition:120s;
+      }
+      #clr1{
+        margin-top: 100px;
+        background-color: rgb(218, 213, 213);
+        
+      }
+      #clr11{
+        margin-top: 100px;
+        height:500px;
+        background-color: rgba(149, 148, 148, 0.503);
+      }
+      #style1{
+        font-family:cursive;
+      }
+      .siz2{
+        height: 700px;
+        background-image: url("image1/Final02.jpg");
+        background-size: 100% 100%;
+      }
+
+      .mg1{
+        margin-top: 500px;
+      }
+      .mg1:hover{
+        transition: 3s;
+        transform:skew(-180deg,-180deg);
+
+      }
+      .mg2{
+        margin-left:80px;
+      }
+      .mg3{
+        margin-top: 500px;
+      }
+      .mg3:hover{
+        transform: scale(1.05);
+        transition: 1s;
+
+      }
+      .wid{
+        margin-left: 70px;
+      }
+      .wid1{
+        margin-left: 70px;
+        height:260px;
+        width: 350px;
+        
+      }
+      .clr3{
+        height: 70px;
+        width: 70px;
+        margin-left: 240px;
+        border-radius: 40px;
+        background-color: rgba(255, 0, 0, 0.129);
+      }
+      .clr4{
+        height: 70px;
+        width: 70px;
+        border-radius: 40px;
+        background-color:red;
+      }
+      .pic{
+        height: 370px;
+        background-image: url(./image1/Final41.jpg);
+        background-size: 100% 100%;
+      }
+      .pic1{
+        height: 370px;
+        background-color: rgba(0, 0, 0, 0.412);
+      }
+      .top{
+        margin-top: 100px;
+      }
+      .top1{
+        margin-top: 80px;
+      }
+      .mrng{
+        margin-left: 250px;
+      }
+      .hw{
+        height: 250px;
+        width: 600px;
+        margin-left: 310px;
+        margin-top: 50px;
+      }
+      .hw1{
+        height: 600px;
+      }
+      .hw12{
+        padding-top: 440px;
+      }
+      .hiw{
+        height: 470px;
+        width: 300px;
+      }
+      .hiw2{
+        height: 40px;
+        border: 2px inset rgb(224, 47, 255);
+        border-radius: 10px;
+      }
+      #hi{
+         border-radius: 10px;
+         border: 2px inset rgb(224, 47, 255);
+      }
+      .hiw3{
+        margin-top: 80px;
+      }
+      .hiw4{
+        height: 350px;
+      }
+      .hiw20{
+        height: 50px;
+        border: 3px inset rgb(236, 110, 173);
+      }
+      #hi1{
+        border: 3px inset rgb(236, 110, 173);
+      }
+      .btn2{
+        width:220px;
+        height: 55px;
+        margin-left: 240px;
+        background-color: red;
+        color:white;
+      }
+      .btn2:hover{
+        background-color:rgb(31, 248, 176);
+        color: red;
+      }
+      .btn22{
+        width:170px;
+        height: 45px;
+        margin-left: 465px;
+        background-color: red;
+      }
+      .btn22:hover{
+        background-color:green;
+      }
+      .h1w{
+        height: 350px;
+        width: 550px;
+        margin-left: 270px;
+        margin-top: 30px;
+        border-radius: 15px;
+        border: 10px inset rgb(155, 3, 249);
+      }
+      .h1w:hover{
+        border: 10px inset #070707;
+      }
+      .add{
+        height: 100px;
+        width: 400px;
+        background-color: rgba(231, 228, 228, 0.503);
+      }
+      .add:hover{
+        background-color: rgb(247, 247, 247);
+        transform: scale(1.05);
+        transition: 1s;
+      }
+      .wwd{
+        width:190px;
+      }
+      .wwd1{
+        width:240px;
+      }
+      .bgclr{
+        background-color: rgba(95, 237, 247, 0.499);
+      }
+      .bgclr1{
+        border: 0px solid rgba(95, 237, 247, 0.499);
+      }
+      .hov1:hover{
+        color: red;
+      }
+      .hov2:hover{
+        border-bottom: 5px solid red;
+        width:80px;
+        margin-left: 20px;
+      }
+      .hov3:hover{
+        color: green;
+      }
+      .hov4:hover{
+        transition: 3s;
+        transform:skew(-180deg,-180deg);
+      }
+      .hov41:hover{
+        transform: scale(1.15);
+        transition: 1s;
+      }
+      .hov5:hover{
+        border-bottom:2px solid red;
+      }
+      .hov6:hover{
+        transform: scale(1.05);
+        transition: 2s;
+      }
+      .hov7{
+        float:right;
+        margin-right: -50px;
+        margin-top: -75px;
+        padding-top: 14px;
+        text-align: center;
+        color: rgb(247, 16, 16);
+        background-color: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        
+      }
+      .hov7:hover{
+        background-color: rgb(55, 213, 224);
+        border:5px solid rgb(55, 213, 224);
+        color: black;
+        transform: rotate(360deg);
+        transition: 5s;
+      }
+      .hov8:hover{
+        color: rgb(224, 248, 89);
+      }
+      @media screen and (min-width:280px) and (max-width:300px){
+            
+      }
+  </style>
+ 
+</head>
+<body>
+<div class="container-fluid bgclr">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-white mb-5">
+    <div class="container-fluid p-2 ">   
+      <ul class="navbar-nav ">
+        <li id="" class="nav-item d1 ms-5"><h1>Yummy.</h1></li>
+        <li id="" class="nave-item d2 d-flex">
+            <a href="file:///C:/Users/Diksha/Deepak/PracticeSpringBoot/Bootstrap/Bootstrap/Form3.html"><div id="" class="btn btn1 rounded-pill mt-2 pt-3"><h6>Book a Table</h6></div></a>
+        </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown " data-bs-toggle="dropdown" href="#"><i class="fa fa-navicon hov1" style="font-size:36px;margin-left: 430px;margin-top: 5px;"></i></a>
+            <ul id="siz" class="dropdown-menu w-75 bg-white">
+              <li><a class="dropdown-item" href="#"><i class="fa fa-remove hov1" style="font-size:36px;float:right"></i></a></li>
+              <li><a class="dropdown-item hov2" href="#">Home</a></li>
+              <li><a class="dropdown-item hov2" href="#">About</a></li>
+              <li><a class="dropdown-item hov2" href="#">Menu</a></li>
+              <li><a class="dropdown-item hov2" href="#">Events</a></li>
+              <li><a class="dropdown-item hov2" href="#">Chefs</a></li>
+              <li><a class="dropdown-item hov2" href="#">Gelary</a></li>
+              <li><a class="dropdown-item hov2" href="#">Dropdown</a></li>
+              <li><a class="dropdown-item hov2" href="#">Contact</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div id="clr1" class="container-fluid  bg-secondary  h-100 w-100">
+    <div class="row">
+      <div class="col">
+        <h1 id="style" class=" display-5 ms-5 text-info">Enjoy Your Healthy <br> Delicious Food</h1>
+        <p class="w-75 m-5 text-warning">Sed autem laudantium dolores. Voluptatem <br> itaque ea consequatur eveniet. Eum quas beatae <br> cumque eum quaerat.</p>
+        <a href="file:///C:/Users/Diksha/Deepak/PracticeSpringBoot/Bootstrap/Bootstrap/Form3.html"><div id="" class="btn btn111 rounded-pill mt-2 ms-5">Book a Table</div></a>
+        <a href="https://youtu.be/XGPTSME7xl0"><div id="" class="btn text-white w-50 hov3 "><span class="text-danger"><i class="fa fa-play-circle-o hov3" style="font-size:36px;"></i></span>Watch Video</div></a>
+      </div>
+      <div  class="col mt-5 ms-5 mb-5"><img id="siz1" src="./image1/Final1.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="container-fluid h-100 w-100">
+    <div class="row">
+      <h6 class="text-center mt-5 text-primary">ABOUT US</h6>
+      <h1 id="style1" class="text-center mt-3">LEARN MORE <span class="text-danger"> ABOUT US</span></h1>
+    </div>
+    <div class="row">
+      <div  class="col-6 container  mt-5 mb-5 siz2">
+        <div class="container w-75 p-3 bg-white text-center rounded-3 mg3"> 
+          <h4>Book a Table</h4>
+          <h3 class="text-danger">+91 9994353461</h3>
+        </div>
+      </div>
+      <div class="col container  mt-5 mb-5 text-justify text-white bg-dark">
+        <p class="wid mt-3">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul class="ms-5">
+          <li class="mt-3">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+          <li class="mt-3">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+          <li class="mt-3">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+
+        </ul>
+        <p class=" w-75 wid">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="container wid1 text-center rounded-3"><iframe width="420" height="280" src="https://www.youtube.com/embed/kRCH8kD1GD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="clr1" class="container-fluid">
+    <div class="row">
+      <div class="col-4 mg2">
+        <div class="container border border-danger bg-danger top1 w-100">
+          <h1 class="w-100 text-white">Why Choose Yummy?</h1>
+          <p class="w-100 text-white mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+          <a href="file:///C:/Users/Diksha/Deepak/PracticeSpringBoot/Bootstrap/Bootstrap/Form3.html"><div class=" btn btnc rounded-pill mt-4 mb-3 pt-2 btn11">Book a Table</div></a> 
+          <div class="container border border-5 border-warning rounded-circle ms-5 mt-5 ms-4 mb-4 hov41" style="height: 220px;width:230px;background-image: url(./image1/res.jpg);background-size: 100% 100%;"></div>
+        </div>
+      </div>
+
+      <div class="col-6 ms-3 mt-5 h-50 ">
+        <div class="row bg-white hov4">
+          <div class="mt-3 clr3"><i class="fa fa-connectdevelop mt-3 ps-1" style="font-size:34px;color: red;"></i></div>
+          <h5 class="text-center mt-4">Corporis voluptates officia eiusmod</h5>
+          <p class="text-center mt-4 mb-4">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+        <div class="row bg-white mt-5 mg1">
+          <div class="mt-3 clr3"><i class="fa fa-firefox mt-3 ps-1" style="font-size:34px;color: red;"></i></div>
+          <h5 class="text-center mt-4">Ullamco laboris ladore pan</h5>
+          <p class="text-center mt-4 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+        <div class="row bg-white mt-5 mb-5 mg1">
+          <div class="mt-3 clr3"><i class="fa fa-linux mt-3 ps-2" style="font-size:34px;color: red;"></i></div>
+          <h5 class="text-center mt-4">Labore consequatur incidid dolore</h5>
+          <p class="text-center mt-4 mb-4">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pic">
+    <div class="container-fluid border pic1 ">
+      <div class="row ">
+        <div class="col-3 hov41">
+          <h1 class="text-white display-2 text-center ms-5" style="font-style: bold;margin-top: 120px;">232</h1>
+          <h4 class="text-white text-center ms-5 ">Clients</h4>
+        </div>
+        <div class="col-3 hov41">
+          <h1 class="text-white display-2 text-center" style="font-style: bold;margin-top: 120px;">521</h1>
+          <h4 class="text-white text-center">Projects</h4>
+        </div>
+        <div class="col-3 hov41">
+          <h1 class="text-white display-2 text-center" style="font-style: bold;margin-top: 120px;">1453</h1>
+          <h4 class="text-white text-center ">Hours of Support</h4>
+        </div>
+        <div class="col-3 hov41">
+          <h1 class="text-white display-2 text-center" style="font-style: bold;margin-top: 120px;">32</h1>
+          <h4 class="text-white text-center ">Workers</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-5 bg-dark text-white">
+    <h6 class="text-center pt-5 text-primary">OUR MENU</h6>
+    <h1 id="style1" class="text-center mt-3">Check Our<span class="text-danger"> Yummy Menu</span></h1>
+    <div class="btn-group mt-4 mb-2 mrng">
+      <button class=" hov5 bg-dark text-white border-top-0 border-start-0 border-end-0" style="font-size:24px ;margin-left: 140px;">Starters</button>
+      <button class="ms-4 hov5 border border-0 border-bottom border-2 border-danger text-danger text-white bg-dark" style="font-size:24px ;">BreakFast</button>
+      <button class="ms-4 hov5  bg-dark text-white border-top-0 border-start-0 border-end-0" style="font-size:24px ;">Lunch</button>
+      <button class="ms-4 hov5 bg-dark text-white border-top-0 border-start-0 border-end-0" style="font-size:24px ;">Dinner</button>
+    </div>
+    <h6 class="text-center mt-5 text-warning">MENU</h6>
+    <h2 class="text-center text-danger">BreakFast</h2>
+    <div class="row mt-5">
+      <div class="col-4 hov6 ">
+        <img class="w-75 ms-5" src="./image1/Final5.png" alt="">
+        <h2 class="text-center mt-3">Magnam Tiste</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+      <div class="col-4 hov6">
+        <img class="w-75 ms-5 " src="./image1/Final6.png" alt="">
+        <h2 class="text-center mt-3">Aut Luia</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+      <div class="col-4 hov6">
+        <img class="w-75 ms-5 " src="./image1/Final7.png" alt="">
+        <h2 class="text-center mt-3">Est Eligendi</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+    </div>
+    <div class="row mt-5 ">
+      <div class="col-4 hov6">
+        <img class="w-75 ms-5" src="./image1/Final8.png" alt="">
+        <h2 class="text-center mt-3">Eos Luibusdam</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+      <div class="col-4 hov6">
+        <img class="w-75 ms-5" src="./image1/Final9.png" alt="">
+        <h2 class="text-center mt-3">Eos Luibusdam</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+      <div class="col-4 mb-5 hov6">
+        <img class="w-75 ms-5" src="./image1/Final10.png" alt="">
+        <h2 class="text-center mt-3">Laboriosam Direva</h2>
+        <h6 class="text-center mt-3">Lorem, deren, trataro, filede, nerada</h6>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div  id="clr11"  class="container-fluid border mt-5 ">
+    <h6 class="text-center mt-5 text-warning">TESTIMONIALS</h6>
+    <h1 id="style1" class="text-center mt-3">What Are They<span class="text-danger"> Saying About Us</span></h1>
+    
+    <div id="demo" class="carousel slide border   hw" data-bs-ride="carousel">
+      <div class="carousel-inner hov6">
+        <div class="carousel-item active">
+          <div class="d-block w-100 border border-0 border-start border-4 border-danger bg-white">
+            <div class="row ">
+              <div class="col-8 ">
+                <p class="w-100 ms-5"><i class="fa fa-quote-left me-3" style="font-size:24px;color:red;"></i>W3Schools is optimized for learning and training. to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.<i class="fa fa-quote-right ms-3" style="font-size:24px;color:red;"></i>
+                </p>
+                <h4 class="ms-5">John Wick</h4>
+                <p class="ms-5">Team Leader</p>
+                <p><i class="fa fa-star ms-5" style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i></p>
+              </div>
+              <div class="col-2">
+                <div class="container rounded-circle ms-4 border border-4 border-dark" style="height: 150px;width:150px;background-image: url(./image1/akka1.jpg);background-size: 100% 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 border border-0 border-start border-4 border-danger bg-white">
+            <div class="row">
+              <div class="col-8">
+                <p class="w-100 ms-5"><i class="fa fa-quote-left me-3" style="font-size:24px;color:red;"></i>W3Schools is optimized for learning and training. to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.<i class="fa fa-quote-right ms-3" style="font-size:24px;color:red;"></i>
+                </p>
+                <h4 class="ms-5">Lara</h4>
+                <p class="ms-5">Team Leader</p>
+                <p><i class="fa fa-star ms-5" style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i></p>
+              </div>
+              <div class="col-2">
+                <div class="container border rounded-circle ms-4 border border-4 border-success " style="height: 150px;width:150px;background-image: url(./image1/akka2.jpg);background-size: 100% 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 border border-0 border-start border-4 border-danger bg-white">
+            <div class="row">
+              <div class="col-8">
+                <p class="w-100 ms-5"><i class="fa fa-quote-left me-3" style="font-size:24px;color:red;"></i>W3Schools is optimized for learning and training. to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.<i class="fa fa-quote-right ms-3" style="font-size:24px;color:red;"></i>
+                </p>
+                <h4 class="ms-5">Tena</h4>
+                <p class="ms-5">Team Leader</p>
+                <p><i class="fa fa-star ms-5" style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i></p>
+              </div>
+              <div class="col-2">
+                <div class="container border rounded-circle ms-4 border border-4 border-primary " style="height: 150px;width:150px;background-image: url(./image1/akka3.jpg);background-size: 100% 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 border border-0 border-start border-4 border-danger bg-white">
+            <div class="row">
+              <div class="col-8">
+                <p class="w-100 ms-5"><i class="fa fa-quote-left me-3" style="font-size:24px;color:red;"></i>W3Schools is optimized for learning and training. to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.<i class="fa fa-quote-right ms-3" style="font-size:24px;color:red;"></i>
+                </p>
+                <h4 class="ms-5">Stark</h4>
+                <p class="ms-5">Team Leader</p>
+                <p><i class="fa fa-star ms-5" style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i> <i class="fa fa-star " style="font-size:20px;color:yellow;"> </i></p>
+              </div>
+              <div class="col-2">
+                <div class="container border  rounded-circle ms-4 border border-4 border-info " style="height: 150px;width:150px;background-image: url(./image1/akka4.jpg);background-size: 100% 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators mt-5">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-secondary"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-secondary" ></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-secondary"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="bg-secondary"></button>
+      </div>
+    </div>
+  </div>  
+
+
+  <div class=" mt-5 bgclr1 mb-5 ">
+    <h6 class="text-center mt-5 text-primary">EVENTS</h6>
+    <h1 id="style1" class="text-center mt-3">Share<span class="text-danger"> Your Moments</span> In Our Restaurant</h1>
+    
+    <div id="demo1" class="carousel slide border hw1 mt-5 " data-bs-ride="carousel">
+      <div class="carousel-inner hov6">
+        <div class="carousel-item active">
+          <div class="d-block w-100 hw1" style="background: url(./image1/Party19.jpg);background-size: 100% 100%; " >
+            <div class="hw1" style="background-color: rgba(0, 0, 0, 0.72);" >
+              <h4 class="text-white ms-5 hw12">Private Parties</h4>
+                <h2 class="text-white ms-5">$ 559</h2>
+                <p class="text-white ms-5">Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, <br>It is the most popular HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 ">
+            <div class="d-block w-100 hw1" style="background: url(./image1/party14.jpg);background-size: 100% 100%; " >
+              <div class="hw1" style="background-color: rgba(0, 0, 0, 0.72);" >
+                <h4 class="text-white ms-5 hw12">Public Parties</h4>
+                  <h2 class="text-white ms-5">$ 999</h2>
+                  <p class="text-white ms-5">Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, <br>It is the most popular HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 ">
+            <div class="d-block w-100 hw1" style="background: url(./image1/Party18.jpg);background-size: 100% 100%; " >              
+              <div class="hw1" style="background-color: rgba(0, 0, 0, 0.72);" >
+                <h4 class="text-white ms-5 hw12">Birth Parties</h4>
+                  <h2 class="text-white ms-5">$ 1499</h2>
+                  <p class="text-white ms-5">Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, <br>It is the most popular HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 ">
+            <div class="d-block w-100 hw1" style="background: url(./image1/Party17.jpg);background-size: 100% 100%; " >
+              <div class="hw1" style="background-color: rgba(0, 0, 0, 0.72);" >
+                <h4 class="text-white ms-5 hw12">Love Parties</h4>
+                  <h2 class="text-white ms-5">$ 1999</h2>
+                  <p class="text-white ms-5">Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, <br>It is the most popular HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+      </div>
+    </div>
+  </div>
+
+   
+  <div class="container mt-5 mb-5">
+    <h6 class="text-center mt-5 text-primary">CHEFS</h6>
+    <h1 class="text-center mt-3">OUR<span class="text-danger"> PROFFESIONAL</span> CHEFS</h1>
+    <div class="row mt-5">
+      <div class="col-4 hov6">
+        <div class="card" style="width:280px;margin-left: 50px;">
+          <img class="card-img-top" src="./image1/chef1.jpg" alt="Card image" >
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-titler text-center mt-2">Walter White</h4>
+            <h6 class="text-center mt-2 text-warning">Master Chef</h6>
+            <p class="card-text text-center mt-3 mb-3">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 hov6">
+        <div class="card" style="width:280px;margin-left: 25px;">
+          <img class="card-img-top" src="./image1/chef2.jpg" alt="Card image" >
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-titler text-center mt-2">Sarah Jhonson</h4>
+            <h6 class="text-center mt-2 text-warning">Patissier</h6>
+            <p class="card-text text-center mt-3 mb-3">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 hov6">
+        <div class="card" style="width:280px">
+          <img class="card-img-top" src="./image1/chef3.jpg" alt="Card image">
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-titler text-center mt-2">William Anderson</h4>
+            <h6 class="text-center mt-2 text-warning">Cook</h6>
+            <p class="card-text text-center mt-3 mb-3">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+  <div class="container mt-5 back border">
+    <h6 class="text-center mt-5 text-primary">BOOK A TABLE</h6>
+    <h1 class="text-center mt-3">BOOK<span class="text-danger"> YOUR STAY</span> WITH US</h1>
+    <div class="row">
+      <div class="col-3 hiw  mt-5 mb-5 ms-2" style="background-image: url(./image1/sp1.jpg); background-size: 100% 100%; "  >
+
+      </div> 
+      <div class="col-8  mt-5">
+       
+        <form action="">
+          <div class="row hiw3">
+            <div class="col-3 ms-3">
+              <input type="text" placeholder="Your Name" class="hiw2 ">
+            </div>
+            <div class="col-3 ms-5">
+              <input type="text" placeholder="Your Mail" class="hiw2">
+            </div>
+            <div class="col-3 ms-5">
+              <input type="text" placeholder="Your Phone" class="hiw2">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-3 ms-3">
+              <input type="text" placeholder="Date" class="hiw2 ">
+            </div>
+            <div class="col-3 ms-5">
+              <input type="text" placeholder="Time" class="hiw2">
+            </div>
+            <div class="col-3 ms-5">
+              <input type="text" placeholder="# People" class="hiw2">
+            </div>
+          </div>
+          <textarea name="" id="hi" cols="87" rows="5" placeholder="Message" class="mt-4 ms-3"></textarea>
+        </form>
+        <a href="file:///C:/Users/Diksha/Deepak/PracticeSpringBoot/Bootstrap/Bootstrap/FinalTask.html"><div class="btn rounded-pill mt-3 btn2  pt-3">Book a Table</div></a>
+      </div> 
+    </div>
+  </div>
+
+
+  <div class="container-fluid border text-white top bg-dark ">
+    <h6 class="text-center mt-5 text-warning">GALLERY</h6>
+    <h1 class="text-center mt-3">Check<span class="text-danger"> Our Gallery</span></h1>
+
+    <div id="demo2" class="carousel slide mt-4 mb-5 ms-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active  h1w" style="background-image: url(./image1/kid4.jpg);background-size: 100% 100%; " >
+         
+        </div>
+        <div class="carousel-item  h1w" style="background-image: url(./image1/kid2.jpg);background-size: 100% 100%; ">
+          
+        </div>
+        <div class="carousel-item  h1w" style="background-image: url(./image1/kid3.jpg);background-size: 100% 100%; ">
+          
+        </div>
+        <div class="carousel-item  h1w" style="background-image: url(./image1/kid1.jpg);background-size: 100% 100%; ">
+          
+        </div>
+        <div class="carousel-item  h1w" style="background-image: url(./image1/kid5.jpg);background-size: 100% 100%; ">
+          
+        </div>
+      </div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active mt-5 bg-secondary"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1" class="mt-5 bg-secondary"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2" class="mt-5 bg-secondary"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="3" class="mt-5 bg-secondary"></button>
+        <button type="button" data-bs-target="#demo2" data-bs-slide-to="4" class="mt-5 bg-secondary"></button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid mt-5 back">
+    <h6 class="text-center pt-5 text-primary">CONTACT</h6>
+    <h1 class="text-center mt-3">NEED HELP? <span class="text-danger">CONTACT US</span></h1>
+    <div id="map-container-google-1" class="z-depth-1-half map-container">
+      <iframe class="hiw4 w-100 mt-4 border rounded-3" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15661.60538008411!2d76.9971588!3d11.0834362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f792ec7c0dbb%3A0x6c150aa4582cc7a4!2sKG%20College%20of%20Arts%20and%20Science!5e0!3m2!1sen!2sin!4v1675794127036!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="row mt-5 ">
+      <div class="col-6 container border add ">
+        <div class="row">
+          <div class="col-3  m-0 pt-3">
+            <div class=" clr4 pt-3 ps-3"><i class="fa fa-map-o" style="font-size:34px;color:white;"></i></div>
+          </div>
+          <div class="col-3 w-75  m-0 pt-3">
+            <h2>Our Address</h2>
+            <p>Yuva Sakthi Academy,Coimbatore -35.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 container border add ">
+        <div class="row">
+          <div class="col-3  m-0 pt-3">
+            <div class="  clr4 pt-3 ps-3"><i class="fa fa-envelope-open-o" style="font-size:34px;color:white;"></i></div>
+          </div>
+          <div class="col-3 w-75  m-0 pt-3 ">
+            <h2>Email Us</h2>
+            <p>Yuva_Sakthi@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 ">
+      <div class="col-6 container border add">
+        <div class="row">
+          <div class="col-3  m-0 pt-3">
+            <div class=" clr4 pt-3 ps-4"><i class="fa fa-phone" style="font-size:34px;color:white;"></i></div>
+          </div>
+          <div class="col-3 w-75  m-0 pt-3">
+            <h2>Call Us</h2>
+            <p>+91 6374586002</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 container border  add">
+        <div class="row">
+          <div class="col-3  m-0 pt-3">
+            <div class=" clr4 pt-3 ps-3"><i class="fa fa-share-alt" style="font-size:34px;color:white;"></i></div>
+          </div>
+          <div class="col-3 w-75  m-0 pt-3">
+            <h2>Opening Hours</h2>
+            <p>Mon-Sat: 8AM - 8PM; Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <form action="">
+        <input type="text" placeholder="Your Name" class="hiw20 w-100 mt-3 ps-3">
+        <input type="text" placeholder="Your Email" class="hiw20 w-100 mt-4 ps-3">
+        <input type="text" placeholder="Subject" class="hiw20 w-100 mt-4 ps-3">
+        <textarea name="" id="hi1" cols="146" rows="5" placeholder="Message" class="mt-4 ps-3"></textarea>
+        <a href="file:///C:/Users/Diksha/Deepak/PracticeSpringBoot/Bootstrap/Bootstrap/FinalTask.html"><div class="btn rounded-pill text-white mt-4 btn22 pt-2 mb-5">Send Message</div></a>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="container-fluid top border bg-dark text-white ">
+    <div class="row mt-5 ms-5">
+      <div class="col-3 ms-5 wwd1">
+        <div class="row ">
+          <div class="col-1 me-3 ">
+            <div class=" "><i class="fa fa-map-marker hov8" style="font-size:30px"></i></div>
+          </div>
+          <div class="col-4 wwd ">
+            <h5> Address</h5>
+            <p>Yuva Academy, Kg Street, Coimbatore -35.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 ms-3 wwd1">
+        <div class="row">
+          <div class="col-1 me-3 ">
+            <div class=" "><i class="fa fa-phone hov8" style="font-size:30px">  </i></div>
+          </div>
+          <div class="col-4 wwd">
+            <h5>Reservations</h5>
+            <p>Phone: 9994553461
+               Email: in@exmple.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 ms-3 wwd1 ">
+        <div class="row">
+          <div class="col-1 me-3 ">
+            <div class=" "><i class="fa fa-clock-o hov8" style="font-size:30px"> </i></div>
+          </div>
+          <div class="col-4 wwd ">
+            <h5> Opening Hours</h5>
+            <p>Mon-Sat: 8AM - 8PM
+              Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 wwd1 ms-3">
+        <div class="row">
+          <div class="col-3 wwd">
+            <h5> Follow Us</h5>
+            <p><i class="fa fa-facebook-square ms-2 mt-2 hov8" style="font-size:36px"></i><i class="fa fa-instagram ms-2 hov8" style="font-size:36px"></i><i class="fa fa-twitter-square hov8 ms-2" style="font-size:36px"></i><i class="fa fa-linkedin-square ms-2 hov8" style="font-size:36px"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container border-0 border-top border-white mt-5">
+      <p class="text-center mt-5 mb-0">© Copyright Yummy. All Rights Reserved</p>
+      <p class="text-center mt-0">Designed by Deadpool</p>
+      <a href="./FinalTask.html"><i class="fa fa-arrow-up ps-1 hov7" style="font-size:36px;"></i></a>
+    </div>
+  </div>
+
+
+
+
+</div>
+</body>
+</html>

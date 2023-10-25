@@ -1,0 +1,19 @@
+﻿2022-12-23 08:05:03, Info       [0x0e00cf] TOOL   Starting OS Rollback... (launched with command line [/CleanInstallFromWinPE /noui /BTFolder:C:\$WINDOWS.~BT\Sources])
+2022-12-23 08:05:03, Info       [0x0e00d1] TOOL   OS Rollback: NoUI switch.
+2022-12-23 08:05:03, Info                  TOOL   OS Rollback: Rolling back clean install launched from WinPE...
+2022-12-23 08:05:07, Info       [0x064149] IBSLIB RollbackExecuteSequence in progress...
+2022-12-23 08:05:07, Info       [0x064130] IBSLIB ExecuteRollbackSequence: Checkpoint(WinPEBootSectorRestoreCheckpoint) rollback in progress.
+2022-12-23 08:05:07, Info                  IBSLIB FindVolume: Successfully found [$Setup_SystemVolume$] on drive [C:]
+2022-12-23 08:05:07, Warning               IBSLIB OSRollbackService::CBootSectorRestoreCheckpoint::Rollback: Will not restore boot sector to C.
+2022-12-23 08:05:07, Info       [0x064171] IBSLIB OSRollbackService::CBootSectorRestoreCheckpoint::Rollback: Restoring MBR sector.
+2022-12-23 08:05:07, Info                  IBSLIB WriteSectors: Requested to write [512] bytes. Succesfully wrote [512] bytes
+2022-12-23 08:05:07, Info       [0x064173] IBSLIB OSRollbackService::CBootSectorRestoreCheckpoint::Rollback: Successfully restored MBR sector on disk [0].
+2022-12-23 08:05:07, Info       [0x064131] IBSLIB ExecuteRollbackSequence: Checkpoint(WinPEBootSectorRestoreCheckpoint) rollback finished.
+2022-12-23 08:05:07, Info       [0x064130] IBSLIB ExecuteRollbackSequence: Checkpoint(WinPEImageApplyDoneCheckpoint) rollback in progress.
+2022-12-23 08:05:07, Info                  IBSLIB FindVolume: Successfully found [$Setup_InstallVolume$] on drive [C:]
+2022-12-23 08:05:07, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\autoexec.bat)
+2022-12-23 08:05:07, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\config.sys)
+2022-12-23 08:05:07, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\Program Files\)
+2022-12-23 08:06:01, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\ProgramData\)
+2022-12-23 08:06:01, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\Users\)
+2022-12-23 08:06:01, Info       [0x064181] IBSLIB OSRollbackService::CNewOSObliterationCheckpoint::Rollback: DeletePath(C:\Windows\)
